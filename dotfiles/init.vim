@@ -48,3 +48,5 @@ let g:gruvbox_contrast_dark = "hard"
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
+" VIM SETTINGS
+set number
