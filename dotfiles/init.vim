@@ -3,7 +3,6 @@ call plug#begin("~/.vim/plugged")
 
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 
@@ -21,8 +20,11 @@ call plug#end()
 "Config Section
 
 " THEME
-colorscheme gruvbox
 "
+set termguicolors
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
+
 " DEOPLETE
 let g:deoplete#enable_at_startup = 1
 
